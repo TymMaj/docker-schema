@@ -12,7 +12,7 @@ services:
       - db_volume:/var/lib/mysql
 
   web-server:
-    image: php:8.1.18-apache
+    build: web-server
     container_name: web-server
     ports:
       - 80:80
